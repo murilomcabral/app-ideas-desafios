@@ -1,6 +1,11 @@
-const binNum = '10101'
+const binInput= document.querySelector('.binInput')
+const binOutput = document.querySelector('.binOutput')
 
-function reverse() {
+binInput.addEventListener('input', function () {
+  bin2dec()
+})
+
+function reverseBin(binNum) {
   const reversedBin = []
   for (let dig of binNum) {
     reversedBin.unshift(dig)
@@ -9,12 +14,11 @@ function reverse() {
 }
 
 function bin2dec() {
+  const binNum = binInput.value
   let dec = 0
-  const revBin = reverse()
+  const revBin = reverseBin(binNum)
   for (digit in revBin) {
     dec += revBin[digit]*2**digit
   }
-  console.log(`For Binary: ${binNum} ... Decimal is: ${dec}`)
+  binOutput.textContent = `For Binary: ${binNum} ... Decimal is: ${dec}`
 }
-
-bin2dec()
