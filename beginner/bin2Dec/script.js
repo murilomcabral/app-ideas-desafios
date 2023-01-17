@@ -1,8 +1,8 @@
-const bin = "1101001"
+const binNum = '10101'
 
 function reverse() {
   const reversedBin = []
-  for (let dig of bin) {
+  for (let dig of binNum) {
     reversedBin.unshift(dig)
   }
   return reversedBin.join('')
@@ -14,7 +14,7 @@ function bin2dec() {
   for (digit in revBin) {
     dec += revBin[digit]*2**digit
   }
-  console.log(`For Binary: ${bin} ... Decimal is: ${dec}`)
+  console.log(`For Binary: ${binNum} ... Decimal is: ${dec}`)
 }
 
 bin2dec()
