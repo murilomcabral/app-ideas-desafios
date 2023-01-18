@@ -4,4 +4,4 @@
 
 <h2>Projetos</h2>
 
-<p><a>[Binary to Decimal converter](https://murilomcabral.github.io/app-ideas-desafios/beginner/bin2Dec/index)</a></p>
+[Binary to Decimal converter](https://murilomcabral.github.io/app-ideas-desafios/beginner/bin2Dec/index)
