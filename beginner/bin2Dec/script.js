@@ -1,11 +1,11 @@
 const binInput= document.querySelector('.binInput');
 const binOutput = document.querySelector('.binOutput');
 const binRegex = /[01]/gmi;
+binInput.setAttribute('maxlength','19')
 
-binInput.addEventListener('input', function (e) {
-  if(binInput.value.match(binRegex)) {
-    bin2dec()
-  }
+binInput.addEventListener('input', function () {
+    const binNum = binInput.value = binInput.value.replace(/[^01]/g,'').replace(/(.{4})/g, '$1 ').trim();
+    bin2dec(binNum)
 })
 
 function reverseBin(binNum) {
@@ -16,9 +16,8 @@ function reverseBin(binNum) {
   return reversedBin.join('')
 }
 
-function bin2dec() {
-  const binNum = binInput.value = binInput.value.match(binRegex).join('')
-  let dec = 0
+function bin2dec(binNum) {
+  let dec = 0;
   const revBin = reverseBin(binNum)
   for (digit in revBin) {
     dec += revBin[digit]*2**digit
