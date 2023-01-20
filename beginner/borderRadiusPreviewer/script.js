@@ -1,5 +1,5 @@
 // homescreen START button
-const startDiv = document.querySelector('.startDiv');
+const startDiv = document.querySelector('.boxContainer');
 startDiv.addEventListener('click', startPreview);
 
 function startPreview() {
