@@ -34,8 +34,8 @@ function copyText() {
   navigator.clipboard.writeText(textArea.value)
 
   const copyAlert = document.createElement('div')
-  copyAlert.textContent = 'Copied!'
-  copyAlert.style.cssText = 'position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(255 0 0/ 0.5); border-radius: 20px; padding: 10px'
+  copyAlert.textContent = 'Code copied!'
+  copyAlert.style.cssText = 'position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(255 0 0/ 0.9); border-radius: 20px; padding: 10px; color: white;'
   document.body.appendChild(copyAlert)
   
   setTimeout(() => {

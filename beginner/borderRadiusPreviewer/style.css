@@ -35,33 +35,39 @@ body {
   width: 300px;
   height: 300px;
   padding: 20px;
-  background-color: bisque;
+  background-color: rgb(10, 100, 180);
   text-align: justify;
 }
 
 .borderInput {
   position: absolute;
-  width: 45px;
-  height: 45px;
+  width: 33px;
+  height: 33px;
   border: none;
   text-align: center;
+  border-radius: 10px;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  appearance: none;
 }
 
 .topLeft {
-  top: -70px;
-  left: -70px;
+  top: -50px;
+  left: -50px;
 }
 .topRight {
-  top: -70px;
-  right: -70px;
+  top: -50px;
+  right: -50px;
 }
 .bottomLeft {
-  bottom: -70px;
-  left: -70px;
+  bottom: -50px;
+  left: -50px;
 }
 .bottomRight {
-  bottom: -70px;
-  right: -70px;
+  bottom: -50px;
+  right: -50px;
 }
 
 .copyCode {
