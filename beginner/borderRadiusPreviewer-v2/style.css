@@ -20,6 +20,9 @@ body {
 }
 
 .boxContainer {
+  display: flex;
+  gap: 150px;
+
   position: absolute;
   top: 50%;
   left: 50%;
