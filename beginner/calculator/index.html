@@ -8,40 +8,29 @@
    <title>Calculator</title>
 </head>
 <body>
-  <div class="calculatorContainer">
-    <table class="calculator">
-      <tr>
-        <td class="display" colspan="4"></td>
-      </tr>
-      <tr>
-        <td class="clear-all-btt" colspan="2">AC</td>
-        <td class="clear-btt">C</td>
-        <td class="divide-btt">÷</td>
-      </tr>
-      <tr>
-        <td class="n7-btt">7</td>
-        <td class="n8-btt">8</td>
-        <td class="n9-btt">9</td>
-        <td class="times-btt">x</td>
-      </tr>
-      <tr>
-        <td class="n4-btt">4</td>
-        <td class="n5-btt">5</td>
-        <td class="n6-btt">6</td>
-        <td class="minus-btt">-</td>
-      </tr>
-      <tr>
-        <td class="n1-btt">1</td>
-        <td class="n2-btt">2</td>
-        <td class="n3-btt">3</td>
-        <td class="plus-btt">+</td>
-      </tr>
-      <tr>
-        <td class="dot-btt">.</td>
-        <td class="n0-btt">0</td>
-        <td class="equal-btt" colspan="2">=</td>
-      </tr>
-    </table>
+  <div class="calculator">
+    <div class="data-display">
+      <div previous-data>123+</div>
+      <div current-data>123</div>
+    </div>
+    <button allclear class="span2">AC</button>
+    <button clear>C</button>
+    <button data-operator >÷</button>
+    <button data-operand>7</button>
+    <button data-operand>8</button>
+    <button data-operand>9</button>
+    <button data-operator >x</button>
+    <button data-operand>4</button>
+    <button data-operand>5</button>
+    <button data-operand>6</button>
+    <button data-operator >-</button>
+    <button data-operand>1</button>
+    <button data-operand>2</button>
+    <button data-operand>3</button>
+    <button data-operator >+</button>
+    <button data-dot >.</button>
+    <button data-operand>0</button>
+    <button data-operator class="span2">=</button>
   </div>
    <script src="script.js"></script>
 </body>
