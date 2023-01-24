@@ -1,30 +1,7 @@
-class Calculator {
-  constructor() {
-
-  }
-
-  clearAll() {
-    
-  }
-
-  clear() {
-
-  }
-
-  divide() {
-
-  }
-
-  times() {
-
-  }
-
-  subtract() {
-
-  }
-
-  sum() {
-    
-  }
-
-}
+const numberButtons = document.querySelectorAll('[data-number]')
+const operationButtons = document.querySelectorAll('[data-operation]')
+const allClearButton = document.querySelectorAll('[data-all-clear]')
+const clearButton = document.querySelectorAll('[data-clear]')
+const deleteButton = document.querySelectorAll('[data-delete]')
+const equalsButton = document.querySelectorAll('[data-equals]')
+const previousOperandTxtElement = document.querySelectorAll('[previous-operand]')
