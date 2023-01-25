@@ -55,12 +55,12 @@ body {
   word-break: break-all;
 }
 
-[current-operand] {
+[data-current-operand] {
   font-size: 3rem;
   color: rgba(255 255 255 / .95);
 }
 
-[previous-operand] {
+[data-previous-operand] {
   font-size: 1rem;
   color: rgba(255 255 255 / .75);
 }
