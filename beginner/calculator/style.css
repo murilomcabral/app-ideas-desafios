@@ -17,20 +17,18 @@ body {
 }
 
 .calculadora {
-  margin: 150px auto;
+  margin: 50px auto;
   display: grid;
-  width: 330px;
-  height: 400px;
+  width: 400px;
   grid-template-columns: repeat(4,1fr);
   font: 2.5rem Arial, sans-serif;
   gap: 3px;
 }
 
-.calculadora > div {
+.calculadora > div:not(div:first-child) {
   user-select: none;
   display: flex;
   cursor: pointer;
-  height: 100%;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -38,10 +36,34 @@ body {
   color: rgba(var(--secColor));
   transition: background-color var(--transitionTimer), outline var(--transitionTimer), color var(--transitionTimer);
   border-radius: 5px;
+  height: 70px;
 }
 
-.calculadora > div:hover {
+.calculadora > div:hover:not(div:first-child) {
   color: rgba(var(--priColor)/ 1);
   outline: 3px solid rgba(var(--priColor)/ 1);
   background-color: rgba(var(--secColor));
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  grid-column: span 4;
+  background-color: rgb(20 20 20);
+  color: aliceblue;
+  border-radius: 5px;
+  padding: 15px;
+  text-align: right;
+  word-wrap: break-word;
+  gap: 20px;
+}
+
+.previous-num {
+  font-size: 1.5rem;
+  color: rgb(200 200 200);
+}
+
+[span2] {
+  grid-column: span 2;
 }
