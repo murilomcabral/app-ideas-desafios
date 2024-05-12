@@ -4,7 +4,11 @@ const binRegex = /[01]/gmi;
 binInput.setAttribute('maxlength','19')
 
 binInput.addEventListener('input', function () {
-    const binNum = binInput.value = binInput.value.replace(/[^01]/g,'').replace(/(.{4})/g, '$1 ').trim();
+    const binNum = 
+      binInput.value = binInput.value
+      .replace(/[^01]/g,'')
+      .replace(/([01]{4})/g, ' $1')
+      .trim();
     bin2dec(binNum)
 })
 
